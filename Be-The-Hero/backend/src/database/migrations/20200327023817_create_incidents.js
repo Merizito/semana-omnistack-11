@@ -8,7 +8,7 @@ exports.up = function(knex) {
 
         table.string('ong_id').notNullable();
 
-        table.foreign('ong_id').references('id').inTable('ongs');
+        table.foreign('ong_id').references('id').inTable('ongs'); //References id of table ongs to field ong_id of table incidents.
     });
 };
 
